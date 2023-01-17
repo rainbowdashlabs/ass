@@ -16,8 +16,8 @@ jobs:
         uses: lewagon/wait-on-check-action@master
         with:
           ref: ${{ github.ref }}
-          check-name: 'TypeScript Build'
-          running-workflow-name: 'build'
+          check-name: 'build'
+          running-workflow-name: 'TypeScript Build'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           allowed-conclusions: success
       - uses: actions/checkout@v3
